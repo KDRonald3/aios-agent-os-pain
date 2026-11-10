@@ -62,6 +62,33 @@ footer{padding:2.4rem 0 4rem;color:var(--faint);font-size:.82rem}
 <div class="stat"><b>7</b><span>Report I claims corrected</span></div>
 </div></div></section>
 
+<section id="glance"><div class="wrap">
+<h2>The study at a glance</h2>
+<p class="dek">One question, two reports: what goes wrong when AI agents run on operating systems built for people. <a href="report1.html">Report I</a> gathered what people report and sorted it by cause. This page, Report II, re-tests those claims as controlled experiments and audits Report I's counts. The figures in this section are the audited ones.</p>
+<div class="stats">
+<div class="stat"><b>1,214</b><span>public reports of agents failing on today's systems</span></div>
+<div class="stat"><b>721</b><span>sources they were gathered from</span></div>
+<div class="stat"><b>1,168</b><span>of them sorted into 13 causes</span></div>
+<div class="stat"><b>11</b><span>controlled experiments that re-test the claims</span></div>
+</div>
+<div class="viz"><h4>What goes wrong, by number of reports</h4><p class="sub">Reports in each of the 13 causes; each report is counted once. n = 1,168. The quotations behind every bar are in <a href="report1.html#map">Report I</a>.</p>
+<div class="bar"><span>Sandbox plumbing</span><span class="track"><span class="fill" style="width:100.0%;background:var(--pain)"></span></span><span class="v">150</span></div>
+<div class="bar"><span>Permissions &amp; identity</span><span class="track"><span class="fill" style="width:97.3%;background:var(--pain)"></span></span><span class="v">146</span></div>
+<div class="bar"><span>Processes &amp; lifecycle</span><span class="track"><span class="fill" style="width:73.3%;background:var(--pain)"></span></span><span class="v">110</span></div>
+<div class="bar"><span>GUI &amp; desktop</span><span class="track"><span class="fill" style="width:70.0%;background:var(--pain)"></span></span><span class="v">105</span></div>
+<div class="bar"><span>Egress &amp; injection</span><span class="track"><span class="fill" style="width:62.7%;background:var(--pain)"></span></span><span class="v">94</span></div>
+<div class="bar"><span>Terminal &amp; exec</span><span class="track"><span class="fill" style="width:61.3%;background:var(--pain)"></span></span><span class="v">92</span></div>
+<div class="bar"><span>Workspaces &amp; parallel</span><span class="track"><span class="fill" style="width:60.0%;background:var(--pain)"></span></span><span class="v">90</span></div>
+<div class="bar"><span>Destruction &amp; undo</span><span class="track"><span class="fill" style="width:55.3%;background:var(--pain)"></span></span><span class="v">83</span></div>
+<div class="bar"><span>Secrets</span><span class="track"><span class="fill" style="width:50.7%;background:var(--pain)"></span></span><span class="v">76</span></div>
+<div class="bar"><span>Sessions &amp; observability</span><span class="track"><span class="fill" style="width:48.7%;background:var(--pain)"></span></span><span class="v">73</span></div>
+<div class="bar"><span>Vendor moves &amp; trust</span><span class="track"><span class="fill" style="width:46.0%;background:var(--pain)"></span></span><span class="v">69</span></div>
+<div class="bar"><span>Platform tax</span><span class="track"><span class="fill" style="width:40.7%;background:var(--pain)"></span></span><span class="v">61</span></div>
+<div class="bar"><span>Environment</span><span class="track"><span class="fill" style="width:12.7%;background:var(--pain)"></span></span><span class="v">19</span></div>
+</div>
+<p>Report I's own cover says 1,172 evidence items and 681 sources. It had left out a draft of 42 items; the corrected totals are 1,214 and 721, and 1,153 of the items carry a word-for-word quotation. The 42 are not in the ranking above. The corrections are set out under <a href="#wrong">What Report I got wrong</a>.</p>
+</div></section>
+
 <section id="new"><div class="wrap">
 <h2>What changed since Report I</h2>
 <p class="dek">Report I's thesis is sound: an agent runs with the full authority of the person who launched it, so every runtime rebuilds the same services in user space. The report supporting it was not rigorous. This one fixes that three ways.</p>
@@ -77,6 +104,7 @@ footer{padding:2.4rem 0 4rem;color:var(--faint);font-size:.82rem}
 <h2>What the machine actually does</h2>
 <p class="dek">Eleven experiments. Each states the claim from Report I, the measured result, and a verdict. The verdict chips and numbers below are read live from the experiment result files.</p>
 <div id="explist"></div>
+<noscript><div class="card note"><p class="lbl">Without scripts</p><p>The list of experiments and the charts on this page are drawn by a script. Without it, read them in the <a href="report2.pdf">PDF of this report</a>.</p></div></noscript>
 </div></section>
 
 <section id="cow"><div class="wrap">
